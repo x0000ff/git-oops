@@ -3,7 +3,8 @@ slidenumbers: true
 theme: Next, 3
 slide-transition: fade(0.3)
 
-# [fit] Git Oops [^*]
+# [fit] Git Oops
+# [fit] How I stopped worrying and love the Git[^*]
 
 
 <br/>
@@ -13,7 +14,7 @@ let author = "Konstantin Portnov"
 let github = "github.com/x0000ff"
 ```
 
-<br/>
+![inline](./img/wallapop.png)
 
 ![right](https://octodex.github.com/images/privateinvestocat.jpg)
 
@@ -21,9 +22,49 @@ let github = "github.com/x0000ff"
 
 ---
 
+# ☝️ First things first
+## Probably I won't see chat
+
+![inline](./img/rules.jpg)
+
+---
+
+# 😕 Have you ever felt confused using Git?
+![inline](./img/wtf.png)
+
+---
+
+# 😐 Have you ever said "it's not my code" inspecting your Pull Request?
+![inline](./img/monkey-puppet.jpg)
+
+---
+
+# 😖 Have you ever lost your code?
+![inline](./img/confused-travolta.gif)
+
+---
+
+# 🤫 Have created commits "Missed files" ,"Oops" etc?
+![inline](./img/missed-files.jpg)
+
+---
+
+# 🥸 Why are we here?
+
+1. Stop to worry
+2. Take total control
+3. Zero surprises
+
+![right](./img/frog.jpg)
+
+---
+
 # What is Git? 
 # <br/> 
 # 🎤
+
+![right](./img/wtf-is-this-john.gif)
+
 
 ---
 
@@ -31,9 +72,9 @@ let github = "github.com/x0000ff"
 
 [.build-lists: true]
 
-- Database
-- Time machine
-- Something else?
+1. Database
+2. Time machine
+3. Something else?
 
 [.build-lists: false]
 
@@ -76,7 +117,7 @@ let github = "github.com/x0000ff"
 # Commit creation
 
 
-![fit inline](./img/commit-creation.png)
+![fit inline](./img/commit.png)
 
 ---
 
@@ -148,6 +189,17 @@ Do not push them to remote 🙏
 
 [^⚠️]: `push --force` needed
 
+
+---
+
+# 🥸 Why are we here?
+
+1. Stop to worry
+2. Take total control
+3. Zero surprises
+
+![right](./img/frog.jpg)
+
 ---
 
 # 🎉 Fin
@@ -162,6 +214,6 @@ Do not push them to remote 🙏
 
 # 🤔 Q & A
 
-## This talk is here: shorturl.at/aeiJS
-
 ![inline](./img/qr.png)
+
+## `github.com/x0000ff/git-oops`

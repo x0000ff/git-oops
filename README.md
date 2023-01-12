@@ -5,25 +5,41 @@
 - [Source](./Git%20Oops.md)
 - [Generated PDF](./Git%20Oops.pdf)
 
+> PDF is outdated. Deckset crashes on export 😔  
 > Presentation was made with [Deckset](https://www.decksetapp.com) and [MacDown](https://macdown.uranusjr.com/)
 
-## Notes
+## Cases
 
-- Create 3 commits
-- `reset head~2`
-- Ooops. We lost **commit 3**
-- `reflog`
-- `show <hash>`
-- `cherry-pick <3-hash>`
-- LOOK new commit is not the same as the old one. WHY?
-- Create commits **4** and **5**
-- `tag before-join`
-- `reset —soft head~2`
-- `commit -m "4 + 5"`
-- `reset —hard before-join` 
+### Amend Last Commit
 
-BACK to SLIDES
+1. Typo in last commit -> `commit --amend`
+2. Forgot to add a file -> `commit --amend --no-edit`
 
-- `commit —amend`
-- What more? Questions?
-- Take any wallapop branch and change applying resets.
+### Recreate Last Commit
+
+1. Typo in last commit -> `reset --soft`
+2. Forgot to add a file -> `reset --soft`
+
+### Recreate Last N Commit
+
+1. Typo in last commit -> `reset --soft head~3`
+
+### Join last 3 commits
+
+0. Mark with tag `before-join`
+1. `reset --soft head~3` + `commit -m "2 + 3 + 4`
+
+### Remove commits / Fast Travel
+
+1. I gon't need last 2 commits -> `reset --hard head~2`
+2. Oops... Identify dissappeared commit -> `reflog`
+3. Use `show`
+4. Use `cat-file -p`
+4. Take only commit `head~2` -> `cherry-pick`
+
+### Why commits have different hashes?
+
+1. Add tag
+2. `reset --soft head~1`
+3. Create a tag with the same message
+4. Why do they have different hashes?
